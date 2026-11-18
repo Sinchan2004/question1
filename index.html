@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latest Answers Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Latest Answers Tracker</h1>
+    <p>Enter the answer updates below. The page will keep the answer with the latest timestamp for each question.</p>
+
+    <label for="updates">Answer Updates (JSON)</label>
+    <textarea id="updates">[
+  {"questionId": 1, "answer": "A", "timestamp": 100},
+  {"questionId": 2, "answer": "C", "timestamp": 110},
+  {"questionId": 1, "answer": "B", "timestamp": 120},
+  {"questionId": 3, "answer": "D", "timestamp": 130},
+  {"questionId": 2, "answer": "A", "timestamp": 105}
+]</textarea>
+
+    <button id="processButton">Process Answers</button>
+
+    <p id="error"></p>
+
+    <h2>Final Answers</h2>
+    <pre id="result">Click the button to see the final answers.</pre>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
